@@ -1,14 +1,19 @@
 package hackerrank;
 
+import java.util.Scanner;
+
 public class PerfectSquare {
 
 	public static void main(String args[]){
-		int low = 17;
-		int high = 100;
+		Scanner in = new Scanner(System.in);
+		System.out.println("Please Enter Your Lower Limit");
+		int low = in.nextInt();
+		int high = in.nextInt();
+		in.close();
 		
 		int smallestNumber = (int)Math.ceil(Math.sqrt(low));
 		int highestNumber = (int)Math.floor(Math.sqrt(high));
 		
-		System.out.println(highestNumber-smallestNumber+1);
+		System.out.println("Total Number of Perfect square are:"+(highestNumber-smallestNumber+1));
 	}
 }

@@ -1,7 +1,5 @@
 package hackerrank;
 
-import java.util.ArrayList;
-
 public class SliceDown {
 
 	public static void main(String args[]){

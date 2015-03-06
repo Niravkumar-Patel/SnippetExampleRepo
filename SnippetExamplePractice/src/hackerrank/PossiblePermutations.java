@@ -2,7 +2,7 @@ package hackerrank;
 
 import java.util.ArrayList;
 
-public class PermutationsVisa {
+public class PossiblePermutations {
 	
 		int x=1;
 		int y=2;
@@ -10,7 +10,7 @@ public class PermutationsVisa {
 		int length;
 
 		public static void main(String args[]){
-			PermutationsVisa pd = new PermutationsVisa();
+			PossiblePermutations pd = new PossiblePermutations();
 			ArrayList<Integer> al = new ArrayList<Integer>();
 			al.add(0);
 			
