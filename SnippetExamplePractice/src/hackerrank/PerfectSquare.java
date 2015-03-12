@@ -8,6 +8,7 @@ public class PerfectSquare {
 		Scanner in = new Scanner(System.in);
 		System.out.println("Please Enter Your Lower Limit");
 		int low = in.nextInt();
+		System.out.println("Please Enter Your Upper Limit");
 		int high = in.nextInt();
 		in.close();
 		
