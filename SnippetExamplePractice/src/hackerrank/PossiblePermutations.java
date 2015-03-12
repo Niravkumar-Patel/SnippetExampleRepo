@@ -36,8 +36,4 @@ public class PossiblePermutations {
 			}
 			System.out.println("");
 		}
-		
-		public static void makePalindrom(String inputStr){
-			
-		}
 }
