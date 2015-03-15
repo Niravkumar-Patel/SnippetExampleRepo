@@ -64,6 +64,4 @@ public class SliceDown {
 		}
 		System.out.println("");
 	}
-	
-	
 }
