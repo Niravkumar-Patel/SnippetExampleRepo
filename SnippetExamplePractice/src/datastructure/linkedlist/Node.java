@@ -1,21 +1,23 @@
 package datastructure.linkedlist;
 
 public class Node {
-
-	private int value;
+	
+	private Object object;
 	private Node nextNode;
 	
-	public int getValue() {
-		return value;
+	public Object getObject() {
+		return object;
 	}
-	public void setValue(int value) {
-		this.value = value;
+	
+	public void setObject(Object object) {
+		this.object = object;
 	}
+	
 	public Node getNextNode() {
 		return nextNode;
 	}
+	
 	public void setNextNode(Node nextNode) {
 		this.nextNode = nextNode;
 	}
-	
 }
