@@ -108,7 +108,7 @@ public class LinkedListCustomImpl implements LinkedListCustom{
 	@Override
 	public void addBefore(Object newObject, Object refObject) {
 		if(firstNode!=null){
-			if(firstNode.getObject().toString().equals(refObject.toString())){
+			if(firstNode.getObject().equals(refObject)){
 				Node newNode = new Node();
 				newNode.setObject(newObject);
 				newNode.setNextNode(firstNode);
@@ -120,7 +120,7 @@ public class LinkedListCustomImpl implements LinkedListCustom{
 				
 				boolean found = false;
 				while(currNode!=null){
-					if(currNode.getObject().toString().equals(refObject.toString())){
+					if(currNode.getObject().equals(refObject)){
 						Node newNode = new Node();
 						newNode.setObject(newObject);
 						newNode.setNextNode(currNode);
@@ -151,7 +151,7 @@ public class LinkedListCustomImpl implements LinkedListCustom{
 			
 			boolean found = false;
 			while(currNode!=null){
-				if(currNode.getObject().toString().equals(refObject.toString())){
+				if(currNode.getObject().equals(refObject)){
 					Node nextNode = currNode.getNextNode();
 					Node newNode = new Node();
 					newNode.setObject(newObject);
