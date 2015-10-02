@@ -36,7 +36,7 @@ public static void main(String args[]){
 		in.close();*/
 	}
 	
-	public static String checkBST(int[] inOrderArray){
+	public static String checkBST(int[] preOrderArray){
 		Stack<Integer> s = new Stack<Integer>();
 		int lower = -1;
 		for(int i=0;i<inOrderArray.length;i++){
