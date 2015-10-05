@@ -36,17 +36,17 @@ public static void main(String args[]){
 		in.close();*/
 	}
 	
-	public static String checkBST(int[] inOrderArray){
+	public static String checkBST(int[] preOrderArray){
 		Stack<Integer> s = new Stack<Integer>();
 		int lower = -1;
-		for(int i=0;i<inOrderArray.length;i++){
-			if(lower>-1 && inOrderArray[i] < lower){
+		for(int i=0;i<preOrderArray.length;i++){
+			if(lower>-1 && preOrderArray[i] < lower){
 				return "NO";
 			}
-			while(!s.isEmpty() && s.peek()<inOrderArray[i]){
+			while(!s.isEmpty() && s.peek() < preOrderArray[i]){
 				lower = s.pop();
 			}
-			s.push(inOrderArray[i]);
+			s.push(preOrderArray[i]);
 		}
 		return "YES";
 	}
